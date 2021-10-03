@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--Matthew Castaneda CSC102-->
+<html lang="en">
+    <head>  
+
+        <script src="Blastoff.js"></script>
+        <link href="Mission Control Sound.css" rel="stylesheet" type="text/css" />
+        <title>** UAT Mission Control**</title>
+        
+                
+    </head>
+    <body>
+               
+         <!--Below contains the pages main layout and formatting.-->
+        <center>
+            <img src="UATspaceLogo-2.jpg" alt=""> 
+            
+            <script>
+
+                </script>
+            <H1>
+                <P>UAT Space Command!</P>
+            </H1>
+            
+            <P>By selecting the Start button, the countdown will begin.</P>
+        
+            <h2>Countdown</h2>
+            
+            <Button type="button" onclick="betterCountdown()" class="buttondesign">Launch</Button>
+                    <p id="countdownDisplay">Ready For Launch</p>
+        </center>
+        <!--This is the addition for the assignment.
+        2 buttons have been added with a different design plays actual NASA launch audio-->
+        
+            <Button type="button" onclick="playlaunch()" class="buttondesignsound"> Click for Live lauch audio</Button>
+            <p>            
+            </p>
+            <Button type="button" onclick="playinsidelaunch()" class="buttondesignsound">Click for Audio Inside Rocket</button>
+
+
+         <!-- This is the background audio that plays once the page has been opened, this is the bridge audio from the 
+            Uss Enterprise. From Startrek.-->
+        <audio autoplay>
+            <source src="inside shuttle star.wav" type="audio/wav" />
+       </audio>
+
+    </body>
+</html>
